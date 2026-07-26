@@ -1,15 +1,13 @@
 %define upstream_name    Array-Unique
-%define upstream_version 0.08
-
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	0.08
+Release:	6
 
 Summary:	Tie-able array that allows only unique values
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Array/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/Array/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -28,7 +26,7 @@ You use the module via tie and once you tied your array to this module it
 will behave correctly.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -52,9 +50,7 @@ make test
 
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 0.80.0-1mdv2011.0
 + Revision: 402980
-- rebuild using %%perl_convert_version
-
-* Tue Jun 09 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.08-1mdv2010.0
+- rebuild using %0.08 Tue Jun 09 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.08-1mdv2010.0
 + Revision: 384437
 - import perl-Array-Unique
 
