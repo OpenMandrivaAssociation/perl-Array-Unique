@@ -1,13 +1,14 @@
 %define upstream_name    Array-Unique
+%define upstream_version 0.09
 Name:		perl-%{upstream_name}
-Version:	0.08
-Release:	6
+Version:	0.09
+Release:	1
 
 Summary:	Tie-able array that allows only unique values
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Array/%{upstream_name}-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SZ/SZABGAB/Array-Unique-0.09.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
