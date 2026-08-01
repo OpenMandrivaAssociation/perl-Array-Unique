@@ -2,7 +2,7 @@
 %define upstream_version 0.09
 Name:		perl-%{upstream_name}
 Version:	0.09
-Release:	2
+Release:	3
 
 Summary:	Tie-able array that allows only unique values
 License:	GPL+ or Artistic
